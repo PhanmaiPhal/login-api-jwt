@@ -8,8 +8,8 @@ const TestJWTPage = () => {
     const [refreshToken, setRefreshToken] = useState(false);
 
     const handleLogin = async () => {
-        const email = "kdeylester@gmail.com";
-        const password = "kdey@@168";
+        const email = "phannmai576@gmail";
+        const password = "ju123456";
         fetch(process.env.NEXT_PUBLIC_BASE_URL_LOCALHOST + "login/", {
             method: "POST",
             headers: {
@@ -29,9 +29,9 @@ const TestJWTPage = () => {
     }
     const handleUpdate = async () => {
         const body = {
-            name: "Product Update By kdeyhenessey"
+            name: "Product Update By JWT"
         }
-        const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}products/${507}/`,{
+        const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}products/${534}/`,{
             method: "PATCH",
             headers: {
                 "Content-Type": "application/json",
